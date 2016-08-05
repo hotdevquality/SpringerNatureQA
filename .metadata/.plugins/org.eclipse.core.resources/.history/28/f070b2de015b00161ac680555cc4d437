@@ -1,0 +1,35 @@
+package com.link.springer.qa.assessment;
+
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class BlankspaceSearchStep {
+	
+	
+	@Given("^I am on link\\.springer\\.com$")
+	public void i_am_on_link_springer_com() throws Throwable {
+	    System.out.println("launched browser");
+	   
+	}
+
+	@When("^I type two blank spaces$")
+	public void i_type_two_blank_spaces() throws Throwable {
+		System.out.println("typed spaces");
+	    
+	}
+
+	@And("^press press return key$")
+	public void press_press_return_key() throws Throwable {
+		System.out.println("pressed return key");
+	    
+	}
+
+	@Then("^I the total result is equal total resource$")
+	public void i_the_total_result_is_equal_total_resource() throws Throwable {
+		System.out.println("returned result");
+	    
+	}
+
+}

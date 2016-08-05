@@ -1,0 +1,36 @@
+package com.link.springer.qa.assessment;
+
+import cucumber.api.PendingException;
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class BlankspaceSearchStep {
+	
+	
+	@Given("^I am on link\\.springer\\.com$")
+	public void i_am_on_link_springer_com() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@When("^I type two blank spaces$")
+	public void i_type_two_blank_spaces() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@And("^press press return key$")
+	public void press_press_return_key() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@Then("^I the total result is equal total resource$")
+	public void i_the_total_result_is_equal_total_resource() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+}

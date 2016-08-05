@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunCukesTest" project="assessment" tests="4" started="4" failures="0" errors="0" ignored="4">
+  <testsuite name="com.link.springer.qa.assessment.RunCukesTest" time="0.001">
+    <testsuite name="Feature: Title of your feature" time="0.001">
+      <testsuite name="Scenario: Title of your scenario" time="0.001" incomplete="true">
+        <skipped/>
+        <testcase name="Given I am on link.springer.com" classname="Scenario: Title of your scenario" time="0.001" ignored="true"/>
+        <testcase name="When I type two blank spaces" classname="Scenario: Title of your scenario" time="0.0" ignored="true"/>
+        <testcase name="And press press return key" classname="Scenario: Title of your scenario" time="0.0" ignored="true"/>
+        <testcase name="Then I the total result is equal total resource" classname="Scenario: Title of your scenario" time="0.0" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

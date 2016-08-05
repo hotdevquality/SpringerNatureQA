@@ -1,0 +1,15 @@
+#Author: Timothy Hassan
+Feature: Resource Search Functionality Test
+
+  Scenario: To search with two blank spaces
+    Given I am on link.springer.com
+    When I type two blank spaces and press return key
+    Then I the total result is equal total resource
+    And close browser
+
+  Scenario: To search with a asterisk
+    Given I am on link.springer.com
+    When I type a with asterisk symbol
+    And press return key
+    Then I validated that error message display
+    And close browser

@@ -1,0 +1,47 @@
+package com.link.springer.qa.assessment;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import org.junit.Assert;
+
+public class BlankspaceSearchStep {
+	
+	WebDriver driver = new FirefoxDriver();
+	static String[] splitResource;
+	
+	
+	@Given("^I am on link\\.springer\\.com$")
+	public void launchLinkSpringer() throws Throwable {
+		driver.get("http://link.springer.com/");
+		String resourceTotal = driver.findElement(By.xpath("//*[@id='browse-nav']")).getText();
+		//System.out.println(resourceTotal);
+		splitResource = resourceTotal.split(" ");
+	}
+
+	@When("^I type two blank spaces$")
+	public void inputTwoBlankSpaces() throws Throwable {
+		driver.findElement(By.xpath("//*[@id='query']")).sendKeys("  ");
+	    
+	}
+
+	@And("^press press return key$")
+	public void pressReturnKey() throws Throwable {
+		driver.findElement(By.xpath("//*[@id='query']")).sendKeys(Keys.RETURN);
+	    
+	}
+
+	@Then("^I the total result is equal total resource$")
+	public void i_the_total_result_is_equal_total_resource() throws Throwable {
+		String returnResult = driver.findElement(By.xpath("//*[@id='kb-nav--main']/div[1]/h1/strong")).getText();		
+		Assert.assertEquals(splitResource[1], returnResult);
+	    
+	}
+
+}

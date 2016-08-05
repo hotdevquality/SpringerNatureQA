@@ -1,0 +1,12 @@
+#Author: Timothy Hassan
+
+Feature: Blank Spaces Search Test
+  I want to type two blank spaces and search
+  these should be trimmed or error message should be displayed
+
+  Scenario: Title of your scenario
+    Given I am on link.springer.com
+    When I type two blank spaces
+    And press press return key
+    Then I the total result is equal total resource
+    And close browser
